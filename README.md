@@ -1,7 +1,7 @@
 Group Project - README Template
 ===
 
-# MWA
+# Most Wanted App
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -15,11 +15,11 @@ An app for users to look up the most wanted criminals in the US.
 
 ### App Evaluation
 - **Category:** Security
-- **Mobile:** This app would be mainly used on mobile devices since officer will be using it in the daily basis.
-- **Story:** Display monst wanted people on the FBI list and give the option to search a name in the list.
-- **Market:** Police officer could use this app to look up and search people in the most wanted list.
-- **Habit:** This app could be used by police officers to check if possible criminals are in the most wanted list.
-- **Scope:** First we would develop the app just for display and search and then we could divide into different categories of crimes.
+- **Mobile:** This app will be used on mobile devices, for simplicity's sake.
+- **Story:** Display most wanted fugitive's from the official FBI list and give the option to search for a name in the list. 
+- **Market:** Anyone from the large commuinity of those interested in crime/ crime shows could indulge, and read up on the official most wanted criminals.
+- **Habit:** Purely for trivial and social purposes, not for the encouragement of anyone to attempt to hunt down individuals from the FBI's Most Wanted list.
+- **Scope:** First, we will develop the app just for general display and search and then we could divide into different categories of crimes.
 
 ## Product Spec
 
@@ -28,7 +28,7 @@ An app for users to look up the most wanted criminals in the US.
 **Required Must-have Stories**
 
 * User can see most-wanted list
-* User can choose specific categories of most-wanted individuals, filtering usual stream down
+* User can choose specific categories of most-wanted individuals, filtering the usual stream down
 * User can tap on the photo shown of an individual and be taken to a detail screen
 
 ### 2. Screen Archetypes
@@ -66,16 +66,39 @@ An app for users to look up the most wanted criminals in the US.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-#### Main_Page
+#### Main page
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | .criminalId   | String   | unique id for the criminal|
-   | name          | String   | name criminal |
-   | image         | String   | image of the criminal |
-   | typeOfCrime   | String   | type of crime he/she is guilty |
-   | warning       | Srting   | warning message |
+   | image         | String(URL)   | image of the fugitive|
+   | title         | String   | name of the fugitive |
+   | description         | String   | short summary of crimes |
+   
+#### Detail page   
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | image         | String(URL)   | image of the fugitive|
+   | title         | String   | name of the fugitive |
+   | description         | String   | short summary of crimes || dates_of_birth_used   | String   | DOB claimed by fugitive |
+   |place_of_birth       | String  | birthplace of the fugitive  |
+   |hair | String | fugitive's hair color |
+   |eyes | String | fugitive's eye color |
+   |height_min|Number|bottom end of fugitive's possible height|
+   |height_max|Number|top end of fugitive's possible height|
+   |weight_min|Number|bottom end of fugitive's possible weight|
+   |weight_max|Number|top end of fugitive's possible weight|
+   |sex|String|fugitive's biological sex|
+   |race|String|fugitive’s race/skin color|
+   |occupation|String|fugitive’s last known line of work|
+   |nationality|String|fugitive’s country of origin|
+   |scars_and_marks|String|identifying scars and marks on the fugitive’s person
+   |person_classification|String|category of person’s involvement
+   |warning_message|String|bolded text in description, “armed and dangerous”, etc.
+   |reward_max|Number|financial compensation for information regarding fugitive|
+   
+ 
+
   
 ### Networking
 - [Add list of network requests by screen ]
